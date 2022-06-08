@@ -22,6 +22,7 @@ const BurgerMenu = ({elements}) => {
           {headers?.map(el => {
             return <div id={el.id} key={Math.random()} className={"burger-head"}>{el.name}</div>
           })}
+
         </div>
         <div>
         {items?.map(item => {
