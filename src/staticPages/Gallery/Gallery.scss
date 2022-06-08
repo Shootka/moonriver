@@ -1,0 +1,27 @@
+.gallery-block{
+  background: #272727;
+  margin-top: 20px;
+
+  position: relative
+}
+
+.social-icons{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  left: 170px;
+  bottom: 37px;
+}
+@media (max-width: 500px) {
+  .social-icons{
+    left: 10px;
+    gap: 11px;
+  }
+}
+@media (max-width: 340px) {
+  .social-icons{
+  bottom: 8px;
+  }
+}

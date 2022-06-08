@@ -1,0 +1,12 @@
+.map-box {
+  background: #272727;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+@media (max-width: 426px) {
+  .map-box{
+    display: block;
+  }
+}

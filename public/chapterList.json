@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "url": "images/for-men.png",
+    "about": "Перейти в раздел",
+    "desc": "Для мужчин"
+  },
+  {
+    "id": "2",
+    "url": "images/for-woman.png",
+    "about": "Перейти в раздел",
+    "desc": "Для женщин"
+  }
+]

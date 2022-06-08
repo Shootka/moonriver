@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "url": "images/slide-1.png"
+  },
+  {
+    "id": "2",
+    "url": "images/slide-2.png"
+  },
+
+  {
+    "id": "3",
+    "url": "images/slide-4.jpg"
+  },
+
+  {
+    "id": "4",
+    "url": "images/slide-4.jfif"
+  },
+
+  {
+    "id": "5",
+    "url": "images/slide-5.jfif"
+  },
+
+  {
+    "id": "6",
+    "url": "images/slide-6.jfif"
+  }
+]

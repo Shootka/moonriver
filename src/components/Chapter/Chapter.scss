@@ -1,0 +1,121 @@
+
+.chap {
+  position: relative;
+  height: fit-content;
+}
+
+.chap-img {
+  position: relative;
+}
+
+.chap::after {
+  box-shadow: inset 0px 0 0 350px rgba(39, 39, 39, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 5px;
+  right: 0;
+  content: "";
+}
+
+.chap-desc-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  z-index: 2;
+}
+
+.chap-desc {
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 64px;
+  line-height: 71px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-top: 20px;
+  position: relative;
+}
+
+.chap-desc::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #FFFFFF;
+  width: 130px;
+  height: 0;
+  background: #FFFFFF;
+  top: 90px;
+  left: 313px;
+  right: 330px;
+}
+
+.chap-about {
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  align-items: center;
+  text-align: right;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .chap-desc::after {
+    left: 192px;
+  }
+  .chap-desc {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chap-desc::after {
+    left: 128px;
+  }
+  .chap-desc {
+    font-size: 48px;
+  }
+  .chap-about {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .chap-desc::after {
+    left: 145px;
+  }
+  .chap-desc {
+    font-size: 48px;
+  }
+  .chap-about {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 376px) {
+  .chap-desc::after {
+    left: 123px;
+  }
+  .chap-desc {
+    font-size: 48px;
+  }
+  .chap-about {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .chap-desc::after {
+    left: 98px;
+    top: 80px;
+  }
+  .chap-desc {
+    font-size: 38px;
+  }
+  .chap-about {
+    font-size: 17px;
+  }
+}

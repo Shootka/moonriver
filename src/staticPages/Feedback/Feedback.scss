@@ -1,0 +1,50 @@
+.feedback{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr
+}
+.feed{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 110px;
+  max-width: 340px;
+  margin: 0 auto
+}
+.title{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #272727;
+}
+.feed-number{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #959595;
+  text-align: left;
+}
+
+@media (max-width: 750px) {
+  .feed{
+    gap: 0;
+    padding: 0 35px ;
+  }
+}
+@media (max-width: 606px) {
+  .feed{
+    padding: 0 15px ;
+  }
+}
+@media (max-width: 520px) {
+  .feedback{
+    display: block;
+  }
+}

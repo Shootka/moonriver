@@ -1,0 +1,64 @@
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 70px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+.icons-group {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 1024px){
+  .nav-bar{
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 502px){
+  .nav-bar{
+    display: block;
+  }
+  .cart path{
+    stroke: #272727;
+  }
+  .wish path{
+    stroke: #272727;
+  }
+  .account path{
+    stroke: #272727;
+  }
+  .logo{
+    display: none;
+  }
+}
+@media (max-width: 344px){
+  .icons{
+    gap: 53px;
+  }
+  .cart path{
+    stroke: white;
+  }
+  .account path{
+    stroke:  white  ;
+  }
+}

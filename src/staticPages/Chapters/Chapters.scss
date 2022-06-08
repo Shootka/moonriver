@@ -1,0 +1,13 @@
+.box {
+  display: grid;
+  gap: 21px;
+  margin-top: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50%);
+}
+
+@media (max-width: 426px) {
+  .box {
+    display: block;
+  }
+}

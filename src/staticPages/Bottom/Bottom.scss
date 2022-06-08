@@ -1,0 +1,94 @@
+.bottom-list {
+  padding: 80px 90px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.contact {
+  display: flex;
+  gap: 100px;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-elem {
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.bottom-contact {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.social-bottom {
+  display: flex;
+  gap: 20px;
+  align-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.contact-phone {
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #C2C2C2;
+  text-align: left;
+  margin: 15px 0;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-content: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.subs {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-content: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+@media (max-width: 840px) {
+  .bottom-contact {
+    justify-content: center
+  }
+  .contact{
+    margin-top: 60px;
+  }
+}
