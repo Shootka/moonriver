@@ -5,7 +5,7 @@ const Page404 = () => {
   return (
     <div style={{height: '500px', display: 'block', paddingTop: '200px'}}>
       <h1>Error 404</h1>
-      <h3>Not found. Something happened</h3>
+      <h3 style={{marginBottom: "40px"}}>Not found. Something happened</h3>
       <Button name={'Go back home'} link={'/'}/>
     </div>
   );

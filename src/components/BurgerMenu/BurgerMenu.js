@@ -3,6 +3,7 @@ import './BurgerMenu.scss'
 import '../../App.css'
 import BurgerElements from "./BurgerElements/BurgerElements";
 import {useSelector} from "react-redux";
+import ContactBox from "../ContactBox/ContactBox";
 
 const BurgerMenu = () => {
   const burgerList = useSelector(state => state.burgerMenuList.data)
@@ -10,8 +11,8 @@ const BurgerMenu = () => {
   const {headers, items} = {...burgerList}
   const [currentTab, setCurrentTab] = useState("");
 
-  useEffect(()=>{
-    setCurrentTab(typeof headers === "undefined"  ? "" : headers[0]?.id)
+  useEffect(() => {
+    setCurrentTab(typeof headers === "undefined" ? "" : headers[0]?.id)
   }, [headers])
 
   const handleTabClick = (e) => {
@@ -27,11 +28,19 @@ const BurgerMenu = () => {
             return <div id={el.id}
                         key={el?._id}
                         onClick={(handleTabClick)}
-                        className={"burger-head" + ` ${currentTab === el.id ? 'active-head' : ''}` }>{el.name}</div>
+                        className={"burger-head" + ` ${currentTab === el.id ? 'active-head' : ''}`}>{el.name}</div>
           })}
         </div>
         <div>
           <BurgerElements items={items} currentTab={currentTab}/>
+          <div className={"burger-bottom "}>
+            <div className={"burger-bottom-box container"}>
+              <div>
+                <img src='images/collection.png' alt=""/>
+              </div>
+              <ContactBox flop={true}/>
+            </div>
+          </div>
         </div>
       </div>
 

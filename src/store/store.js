@@ -19,6 +19,11 @@ const initialState = {
     data: {},
     isLoading: true,
     error: null
+  },
+  socialIcon: {
+    data: [],
+    isLoading: true,
+    error: null
   }
 }
 
@@ -32,6 +37,11 @@ const reducer = (state = initialState, action) => {
     case "SET_SLIDES": {
       return {
         ...state, slideList: {data: [...action.payload], isLoading: false}
+      };
+    }
+    case "SET_SOCIAL-ICON": {
+      return {
+        ...state, socialIcon: {data: [...action.payload], isLoading: false}
       };
     }
     case "TOGGLE_MENU": {

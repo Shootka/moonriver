@@ -14,7 +14,11 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.flop{
+  flex-direction: column;
+  gap: 50px;
+  align-items:  flex-start;
+}
 .list-elem {
   font-family: 'Futura PT';
   font-style: normal;
@@ -32,7 +36,6 @@
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .social-bottom {

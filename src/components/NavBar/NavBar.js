@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import './NavBar.scss'
 import Menu from "../Menu/Menu";
 import '../../App.css'
@@ -15,7 +15,7 @@ const NavBar = () => {
     axios('/burgerMenuList.json')
       .then(res => dispatch({type: "SET_BURGER-MENU", payload: res.data}))
       .catch(err => console.log(err))
-  }, [])
+  }, [dispatch])
 
   return (
     <>

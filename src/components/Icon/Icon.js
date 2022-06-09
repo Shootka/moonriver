@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Icon = ({path, width, height, color = 'none', url = '#'}) => {
+const Icon = ({path, width, height, color = 'none', url = '/'}) => {
 
   return (
     <a href={url}>
