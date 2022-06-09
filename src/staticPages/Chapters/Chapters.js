@@ -12,7 +12,6 @@ const Chapters = () => {
         .catch(err => console.log(err))
   }, [])
 
-  console.log(chapters)
   return (
     <div className={'box'}>
       { chapters.map((ch) => {

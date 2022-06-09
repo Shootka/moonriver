@@ -14,6 +14,11 @@ const initialState = {
   burgerMenu: {
     isOpen: false,
     error: null
+  },
+  burgerMenuList: {
+    data: {},
+    isLoading: true,
+    error: null
   }
 }
 
@@ -31,7 +36,12 @@ const reducer = (state = initialState, action) => {
     }
     case "TOGGLE_MENU": {
       return {
-        ...state, burgerMenu: {data: action.payload}
+        ...state, burgerMenu: {isOpen: action.payload}
+      };
+    }
+    case "SET_BURGER-MENU": {
+      return {
+        ...state, burgerMenuList: {data: {...action.payload}, isLoading: false}
       };
     }
     default:

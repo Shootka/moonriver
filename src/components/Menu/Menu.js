@@ -1,15 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './Menu.scss'
-const Menu = () => {
-  return (
-    <>
-      <div className={'menu'}>
-        <span className={'line'}/>
-        <span className={'line'}/>
-        <span className={'line'}/>
-      </div>
+import {useDispatch, useSelector} from "react-redux";
 
-    </>
+const Menu = () => {
+  const isOpen = useSelector(state => state.burgerMenu.isOpen)
+  const dispatch = useDispatch()
+  return (
+    <div className="menu-wrapper " onClick={() => dispatch({type: "TOGGLE_MENU", payload: !isOpen})}>
+      <div className={`${!!isOpen ? 'hamburger-menu animate' : 'hamburger-menu'}`}/>
+    </div>
   );
 };
 

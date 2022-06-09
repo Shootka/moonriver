@@ -1,4 +1,4 @@
-.burger{
+.burger {
   position: absolute;
   background: #272727;
   width: 100%;
@@ -8,21 +8,23 @@
   right: 0;
   z-index: 10;
 }
-.burger-head{
-  cursor: pointer ;
+
+.burger-head {
+  cursor: pointer;
   font-family: 'Futura PT', sans-serif;
   font-style: normal;
   font-weight: 450;
   font-size: 16px;
-  //line-height: 21px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
-  padding: 27px 0;
 
+  padding: 27px 0;
 }
-.item-title{
+.active-head{
+  border-bottom: 2px solid #FFFFFF;
+}
+.item-title {
   font-family: 'Futura PT', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -32,35 +34,51 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.item-link{
+
+.item-link {
   font-family: 'Futura PT', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 23px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-
+  margin: 7px 0;
 }
-.burger-head-list{
+
+.burger-head-list {
   display: flex;
   gap: 50px;
   margin-top: 140px;
   z-index: 14;
 }
-.burger-items-list{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
+
+.burger-items-bg {
   background: #272727;
 }
-.burger-item{
+
+.items-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 11%;
+  padding: 20px 40px;
+  border-bottom: 2px solid #2F2F2F;
+}
+
+.burger-item {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   align-content: stretch;
 }
-a{
+
+.burger-item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+a {
   text-decoration: none;
 }
