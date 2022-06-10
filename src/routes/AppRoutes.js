@@ -9,7 +9,7 @@ const AppRoutes = () => {
     <div>
       <Routes>
         <Route exact path='/' element={<MainPage/>}/>
-        <Route exact path='/cart' />
+        <Route exact path='/cart' element={<Stopper/>}/>
         <Route exact path='/favorites' element={<Stopper/>}/>
         <Route exact path='/accounts' element={<Stopper/>}/>
         <Route exact path='/stopper' element={<Stopper/>}/>

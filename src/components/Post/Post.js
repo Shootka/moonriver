@@ -23,7 +23,7 @@ const Post = () => {
         <div className={'prod-block'}>
           <h3 className={'prod-name'}>КОЛЬЦО TRINITY, Cartier</h3>
           <p className={'prod-desc'}>Белое золото, бриллианты</p>
-          <p className={'prod-price'}>498 000 ₽</p>
+          <p className={'prod-price'}>2449 $</p>
         </div>
       </div>
 

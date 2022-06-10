@@ -1,7 +1,10 @@
 .App{
   text-align: center;
 }
-
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 .container{
   padding: 0 15px;
   max-width: 1200px;

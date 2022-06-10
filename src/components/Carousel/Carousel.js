@@ -90,7 +90,7 @@ const Carousel = () => {
     <div className={'carousel'}>
       <h2 className={'carousel-title container'}> Мы <br/>в социальных сетях </h2>
       <Slider {...settings}>
-        {slideList.map((slide) => {
+        {slideList.map(slide => {
           return (<img key={slide.id} src={slide.url} alt=""/>)
         })}
       </Slider>
