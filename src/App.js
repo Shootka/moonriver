@@ -11,7 +11,7 @@ function App() {
       <NavBar/>
       <div onClick={() => dispatch({type: "TOGGLE_MENU", payload: false})}>
         <AppRoutes/>
-        <Bottom/>
+        {/*<Bottom/>*/}
       </div>
     </div>
   );

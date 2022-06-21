@@ -10,7 +10,7 @@ const FindAddress = () => {
         <div className={'find-address'}>
           <h3 className={'find-title'}>Найди бутик около себя</h3>
           <p className={'find-desc'}>Введите свой адрес и узнайте о самых ближайших бутиках к вам</p>
-          <Input placeholder={'Введите адрес'} color={'white'}/>
+          <Input placeholder={'Введите адрес'} color={'white'} search/>
         </div>
       </div>
       <Map/>

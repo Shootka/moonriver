@@ -2,12 +2,10 @@ $bar-width: 30px;
 $bar-height: 2px;
 $bar-spacing: 10px;
 
-
 .menu-wrapper {
   width: $bar-width;
   height: $bar-height + $bar-spacing*2;
   cursor: pointer;
-  padding: 0 15px;
 }
 
 .hamburger-menu,

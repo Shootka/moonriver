@@ -16,11 +16,11 @@ const MainPage = () => {
           <Post/>
         </div>
       </section>
-      <Chapters/>
-      <FindAddress/>
-      <ProductList/>
-      <Gallery/>
-      <Feedback/>
+      {/*<Chapters/>*/}
+      {/*<FindAddress/>*/}
+      {/*<ProductList/>*/}
+      {/*<Gallery/>*/}
+      {/*<Feedback/>*/}
     </section>
   )
     ;

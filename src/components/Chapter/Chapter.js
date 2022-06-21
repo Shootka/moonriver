@@ -7,7 +7,7 @@ const Chapter = ({url, desc, about, link = '/stopper'}) => {
     <Link to={link} className={'chap'}>
         <img className={"chap-img"} style={{width: '100%', height: "100%"}} src={url} alt=""/>
         <div className={'chap-desc-block'}>
-          <a href={link} className={"chap-about"}>{about}</a>
+          <Link to={link} className={"chap-about"}>{about}</Link>
           <p className={'chap-desc'}>{desc}</p>
         </div>
     </Link>

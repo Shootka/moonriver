@@ -1,4 +1,4 @@
-.post{
+.post {
   display: flex;
   align-content: center;
   padding: 130px 0 70px 0;
@@ -11,7 +11,7 @@
   justify-self: start;
 }
 
-.post-title{
+.post-title {
   margin-top: 0;
   font-family: 'Forum';
   font-style: normal;
@@ -20,7 +20,8 @@
   line-height: 71px;
   color: #272727;
 }
-.post-more{
+
+.post-more {
   font-family: 'Segoe UI';
   font-style: italic;
   font-weight: 300;
@@ -32,7 +33,8 @@
   left: 500px;
   top: 460px;
 }
-.post-more::before{
+
+.post-more::before {
   position: relative;
   content: '';
   display: block;
@@ -43,10 +45,8 @@
   background: #272727;
 }
 
-.prod-block{
-  //align-self: end;
-}
-.prod-name{
+
+.prod-name {
   font-family: 'Futura PT';
   font-style: normal;
   font-weight: 400;
@@ -57,7 +57,8 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.prod-desc{
+
+.prod-desc {
   font-family: 'Futura PT';
   font-style: normal;
   font-weight: 300;
@@ -66,7 +67,8 @@
   text-align: right;
   color: #C2C2C2;
 }
-.prod-price{
+
+.prod-price {
   font-family: 'Segoe UI';
   font-style: italic;
   font-weight: 300;
@@ -77,63 +79,133 @@
   color: #EFC58B;
 }
 
-.lang-selector{
+.lang-selector {
   display: flex;
   gap: 10px;
   color: #C4C4C4;
 }
-.bottom-block{
+
+.bottom-block {
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
 
-.active{
+.active {
   color: #272727;
 }
 
+.post-image {
+  height: auto;
+  width: 100%;
+  /* еще больше контроля с max-width */
+  max-width: 720px;
+}
 
-@media (max-width: 1024px) {
-  .post{
+@media (max-width: 1030px) {
+  .post {
     gap: 50px;
+    padding-bottom: 0;
   }
-  .post-more{
+  .post-more {
     left: 250px;
     top: 400px;
   }
 }
-@media (max-width: 768px) {
-  .post{
-    padding-bottom: 35px;
+
+@media (max-width: 866px) {
+  .post {
+    padding-top: 90px;
   }
-  .post-image{
-    width: 260px;
-  }
-  .post-more{
-    left: 210px;
-    top: 416px;
+  .post-more {
+    top: 430px;
   }
 }
+
+@media (max-width: 768px) {
+  .post-image {
+    //width: 260px;
+  }
+  .post-more {
+    left: 210px;
+    top: 425px;
+  }
+}
+
+@media (max-width: 685px) {
+  .post-more {
+    left: 180px;
+  }
+}
+
+@media (max-width: 626px) {
+  .post-more {
+    left: 75px;
+  }
+  .post-more::before {
+    content: none;
+  }
+  .post-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 590px) {
+  .post {
+    padding-top: 100px;
+  }
+  .post-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .post{
+    gap: 5px;
+  }
+  .post-more {
+    left: 39px;
+  }
+  .prod-name {
+    font-size: 13px;
+  }
+  .prod-desc {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 435px) {
-  .post-title{
+  .post-title {
     display: none;
   }
-  .bottom-block{
+  .bottom-block {
     margin-top: 100px;
   }
-  .post-more{
-    left: 56px;
+  .post-more {
+    left: 25px;
     top: 420px;
   }
-  .post-more:before{
+  .post-more:before {
     display: none;
   }
-  .post{
+  .post {
     justify-content: center;
+    padding-top: 50px;
   }
 }
+
+@media (max-width: 400px) {
+  .post-more {
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+  .active{
+    color: #FFFFFF;
+  }
+}
+
 @media (max-width: 340px) {
-  .post-more{
+  .post-more {
     color: #FFFFFF;
 
   }

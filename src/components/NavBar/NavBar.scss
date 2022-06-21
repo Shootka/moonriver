@@ -1,9 +1,8 @@
 .nav-bar {
   position: absolute;
-  width: 100%;
   left: 0;
   right: 0;
-  padding: 70px 0 0;
+  padding: 70px 15px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -30,13 +29,26 @@
 
 @media (max-width: 1024px){
   .nav-bar{
-    padding: 40px 0;
+    padding: 40px 15px;
+  }
+}
+@media (max-width: 660px){
+  .icons-group{
+   gap: 60px;
+  }
+}
+@media (max-width: 540px){
+  .icons{
+   gap: 30px;
   }
 }
 
 @media (max-width: 502px){
   .nav-bar{
     display: block;
+  }
+  .icons-group{
+    gap: 90px;
   }
   .cart path{
     stroke: #272727;
@@ -51,14 +63,29 @@
     display: none;
   }
 }
-@media (max-width: 344px){
-  .icons{
-    gap: 53px;
+@media (max-width: 424px){
+  .icons-group{
+    gap: 150px;
+  }
+}
+@media (max-width: 400px){
+  .wish path{
+    stroke: white;
   }
   .cart path{
     stroke: white;
   }
   .account path{
-    stroke:  white  ;
+    stroke:  white ;
   }
+}
+
+@media (max-width: 344px){
+  .icons{
+    gap: 53px;
+  }
+  .icons-group{
+    gap: 120px;
+  }
+
 }
